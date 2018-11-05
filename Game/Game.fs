@@ -1,4 +1,4 @@
-﻿namespace Game
+﻿namespace Ambition
 
 open Microsoft.Xna.Framework
 open Microsoft.Xna.Framework.Graphics
@@ -13,8 +13,6 @@ type AmbitionGame() as self =
 
     do 
         self.Content.RootDirectory <- "Content"
-
-    member this.X = "F#"
 
     override self.Initialize() = 
         base.Initialize()

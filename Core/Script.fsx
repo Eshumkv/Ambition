@@ -2,7 +2,7 @@
 // for more guidance on F# programming.
 
 #load "Library1.fs"
-open Game
+open Core
 
 // Define your library scripting code here
 

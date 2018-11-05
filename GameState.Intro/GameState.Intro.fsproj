@@ -5,15 +5,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>77b50687-93c3-4624-a267-500f5365a33c</ProjectGuid>
+    <ProjectGuid>26bdd9df-7bde-4af2-ac3c-4b19214e72c0</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Game</RootNamespace>
-    <AssemblyName>Game</AssemblyName>
+    <RootNamespace>GameState.Intro</RootNamespace>
+    <AssemblyName>GameState.Intro</AssemblyName>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.1.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Name>Game</Name>
+    <Name>GameState.Intro</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,8 +52,7 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="GameState.fs" />
-    <Compile Include="Game.fs" />
+    <Compile Include="Intro.fs" />
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -77,11 +76,6 @@
     <ProjectReference Include="..\Core\Core.fsproj">
       <Name>Core</Name>
       <Project>{2440bac1-67e9-4434-80e7-a29863f1ec17}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\GameState.Intro\GameState.Intro.fsproj">
-      <Name>GameState.Intro</Name>
-      <Project>{26bdd9df-7bde-4af2-ac3c-4b19214e72c0}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
